@@ -80,3 +80,13 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
 }
+
+spotless {
+    kotlin {
+        // 可以規範讓 lint 只在哪些檔案運作，這裏規定檢查所有 .kt file
+        target "**/*.kt"
+    }
+    java {
+        target "**/*.java"
+    }
+}
