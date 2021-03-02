@@ -83,5 +83,4 @@ class NavigationViewModel(savedStateHandle: SavedStateHandle) : ViewModel() {
     fun navigateTo(screen: Screen) {
         currentScreen = screen
     }
-
 }

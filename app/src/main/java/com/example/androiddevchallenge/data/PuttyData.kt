@@ -73,6 +73,4 @@ val puttys: List<Putty> =
         putty2,
         putty3,
         putty4,
-        putty5
-    
-    )
+        putty5)
