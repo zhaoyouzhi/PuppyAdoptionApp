@@ -34,7 +34,6 @@ sealed class Screen(val id: ScreenName) {
     data class DetailS(val putty: Putty) : Screen(DETAIL)
 }
 
-
 private const val SIS_SCREEN = "sis_screen"
 private const val SIS_NAME = "screen_name"
 private const val SIS_POST = "post"
@@ -57,7 +56,6 @@ private fun Bundle.toScreen(): Screen {
         }
     }
 }
-
 
 private fun Bundle.getStringOrThrow(key: String) =
     requireNotNull(getString(key)) { "Missing key '$key' in $this" }
@@ -85,4 +83,5 @@ class NavigationViewModel(savedStateHandle: SavedStateHandle) : ViewModel() {
     fun navigateTo(screen: Screen) {
         currentScreen = screen
     }
+
 }
