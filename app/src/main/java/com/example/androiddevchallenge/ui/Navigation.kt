@@ -73,14 +73,14 @@ class NavigationViewModel(savedStateHandle: SavedStateHandle) : ViewModel() {
     )
 
     @MainThread
+    fun navigateTo(screen: Screen) {
+        currentScreen = screen
+    }
+
+    @MainThread
     fun onBack(): Boolean {
         val wasHandled = currentScreen != Screen.PuttyS
         currentScreen = Screen.PuttyS
         return wasHandled
     }
-
-    @MainThread
-    fun navigateTo(screen: Screen) {
-        currentScreen = screen
-    }
- }
+}

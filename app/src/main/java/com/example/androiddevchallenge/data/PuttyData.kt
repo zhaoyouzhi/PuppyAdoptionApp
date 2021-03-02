@@ -67,11 +67,10 @@ val putty5 = Putty(
     description = "Happy go lucky, playful, social and active little Sheldon is looking for a home. Sheldon is an American Staffordshire Terrier puppy - estimated to be about 4 months old. He loves to run and play and say Hello to every person he meets. He would love a calm and social older dog sibling to show him how the world works."
 )
 
-val puttys: List<Putty> =
-    listOf(
-        putty1,
-        putty2,
-        putty3,
-        putty4,
-        putty5
-    )
+val puttys = listOf(
+    putty1,
+    putty2,
+    putty3,
+    putty4,
+    putty5
+)
