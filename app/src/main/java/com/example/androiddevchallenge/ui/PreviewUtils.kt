@@ -13,21 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.data
+package com.example.androiddevchallenge.ui
 
-import android.os.Parcelable
-import androidx.annotation.DrawableRes
-import androidx.compose.runtime.Immutable
-import kotlinx.parcelize.Parcelize
+import androidx.compose.material.Surface
+import androidx.compose.runtime.Composable
+import com.example.androiddevchallenge.ui.theme.MyTheme
 
-@Immutable
-@Parcelize
-data class Putty(
-    val name: String,
-    val location: String,
-    val age: Int,
-    val gender: String,
-    val breed: String,
-    @DrawableRes val imageId: Int,
-    val description: String
-): Parcelable
+@Composable
+internal fun ThemedPreview(
+    darkTheme: Boolean = false,
+    content: @Composable () -> Unit
+) {
+    MyTheme(darkTheme = darkTheme) {
+        Surface {
+            content()
+        }
+    }
+}
