@@ -113,7 +113,8 @@ fun PostCardHistory(putty: Putty, navigateTo: (Screen) -> Unit) {
             .clickable(
                 onClick = {
                     navigateTo(Screen.DetailS(putty))
-                })
+                }
+            )
             .padding(16.dp)
     ) {
         PostImage(
@@ -169,7 +170,6 @@ fun BreedAndLocation(
                     style = textStyle
                 )
             }
-
         }
     }
 }
