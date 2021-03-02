@@ -42,7 +42,6 @@ import com.example.androiddevchallenge.ui.Screen
 import com.example.androiddevchallenge.ui.ThemedPreview
 import com.example.androiddevchallenge.ui.theme.purple700
 
-
 @Preview("PuttyPreview")
 @Composable
 fun PuttyPreview() {
@@ -83,7 +82,6 @@ private fun PostList(
     }
 }
 
-
 /**
  * The Putty screen.
  */
@@ -112,9 +110,10 @@ private fun PostListDivider() {
 fun PostCardHistory(putty: Putty, navigateTo: (Screen) -> Unit) {
     Row(
         Modifier
-            .clickable(onClick = {
-                navigateTo(Screen.DetailS(putty))
-            })
+            .clickable(
+                onClick = {
+                    navigateTo(Screen.DetailS(putty))
+                })
             .padding(16.dp)
     ) {
         PostImage(
