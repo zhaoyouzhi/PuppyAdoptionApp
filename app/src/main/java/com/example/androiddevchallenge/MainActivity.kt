@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
 
     private val navigationViewModel by viewModels<NavigationViewModel>()
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

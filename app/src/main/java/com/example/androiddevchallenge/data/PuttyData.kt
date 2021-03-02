@@ -17,7 +17,6 @@ package com.example.androiddevchallenge.data
 
 import com.example.androiddevchallenge.R
 
-
 val putty1 = Putty(
     name = "GUNTHER",
     location = "Morris, NY",
