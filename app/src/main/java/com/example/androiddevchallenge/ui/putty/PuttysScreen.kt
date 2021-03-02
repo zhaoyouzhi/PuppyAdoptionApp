@@ -47,7 +47,7 @@ import com.example.androiddevchallenge.ui.theme.purple700
 @Composable
 fun PuttyPreview() {
     ThemedPreview {
-        PostCardHistory(putty = putty1, {})
+        PostCardHistory(putty = putty1) {}
     }
 }
 
