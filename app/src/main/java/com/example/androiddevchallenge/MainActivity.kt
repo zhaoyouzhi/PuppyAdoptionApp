@@ -51,8 +51,6 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-
-// Start building your app here!
 @Composable
 fun MyApp(navigationViewModel: NavigationViewModel) {
     Crossfade(navigationViewModel.currentScreen) { screen ->
@@ -65,6 +63,7 @@ fun MyApp(navigationViewModel: NavigationViewModel) {
                     putty = screen.putty,
                     onBack = { navigationViewModel.onBack() }
                 )
+                else -> {}
             }
         }
     }
